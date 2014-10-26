@@ -49,6 +49,7 @@ write.table(cleaned, "merged_clean_data.txt")
 
 # 5. From the data set in step 4, Creates a 2nd, independent tidy data set with the average 
 # of each variable for each activity and each subject.
+
 # Collect the unique subjects, and use them to to determine the number of subjects. Then determine the number
 # of activities using the length of the activities table.
 uniqueSubjects = unique(S)[, 1]
@@ -58,7 +59,7 @@ numCols = dim(cleaned)[2]
 result = cleaned[1:(numSubjects*numActivities), ]
 row = 1
 
-# Now, put together the tidy data set with the average of each varaible for each activity and subject.
+# Now, put together the tidy data set with the average of each variable for each activity and subject.
 for (s in 1:numSubjects) 
 {
   for (a in 1:numActivities) 

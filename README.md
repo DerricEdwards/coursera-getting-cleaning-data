@@ -1,5 +1,5 @@
-coursera-getting-cleaning-data
-==============================
+coursera-getting-cleaning-data, Readme
+======================================
 
 Repository for the Getting and Cleaning Data Course Project
 
